@@ -1,0 +1,65 @@
+<div className='conatiner'>
+         {commentlist.map((val)=>{
+              return   <h5>comment:{val.body}</h5>
+             })}
+         </div>
+
+
+
+
+            <div className='container'> 
+       <Form  className='form' noValidate validated={validated} >
+      <Row className="mb-3">
+        <Form.Group as={Col} md="6" controlId="validationCustom01">
+          <Form.Label>Comment</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Comment"
+            onChange={(e) => setComment(e.target.value)}
+            
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="6" controlId="validationCustom02">
+          <Form.Label> Username</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+            
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+
+      <Row className="mb-3">
+        <Form.Group as={Col} md="6" controlId="validationCustom04">
+          <Form.Label>Postid</Form.Label>
+          <Form.Control type="text" placeholder="Postid" onChange={(e) => setpostID(e.target.value)} required />
+          <Form.Control.Feedback type="invalid">
+            Please provide Postid.
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group as={Col} md="6" controlId="validationCustom05">
+          <Form.Label>Userid</Form.Label>
+          <Form.Control type="text" placeholder="Userid" onChange={(e) => setuserID(e.target.value)} required />
+          <Form.Control.Feedback type="invalid">
+            Please provide a valid Userid.
+          </Form.Control.Feedback>
+        </Form.Group>
+      </Row>
+      
+      <br></br>
+      <Button type="submit" variant="dark" onClick={Sumbit}>Submit form</Button>
+       
+       <br></br>
+
+       
+     
+    </Form>
+          
+         
+
+    </div>
