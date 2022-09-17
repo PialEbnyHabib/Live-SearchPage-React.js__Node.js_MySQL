@@ -1,4 +1,4 @@
-<h2>Website Link - https://searchpage-mysql.netlify.app/ </h2>
+<h2 target="blank">Website Link - https://searchpage-mysql.netlify.app/ </h2>
 
 
 # Getting Started with Create React App
